@@ -1,0 +1,32 @@
+@pic1: url('./img/19300260829801133655476327752_950.jpg');
+@pic2: url('./img/20150228172529_yZALv.jpg');
+@pic3: url('./img/20160607122101_At5zX.jpeg');
+
+.bordered {
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.cover {
+    background-size: cover;
+}
+
+div {
+    .bordered();
+
+    &#app {
+        background-image: @pic1;
+        .cover();
+    }
+
+    &#app2 {
+        .cover();
+        background-image: @pic2;
+    }
+
+    &#app3 {
+        .cover();
+        background-image: @pic3;
+    }
+}
