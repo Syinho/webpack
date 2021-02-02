@@ -17,9 +17,9 @@ const config = {
             use: [{
                 loader: 'url-loader',
                 options: {
-                    limit: 7 * 1024,
+                    limit: 8 * 1024,
                     // 1M
-                    esModule: false,
+                    esModule: false, 
                     name:'img/[hash:10].[ext]'
                 }
             }]
