@@ -129,7 +129,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("function change() {\n  document.getElementsByTagName('button')[0].addEventListener('click', () => {\n    document.getElementById('app').style.backgroundColor = 'grey';\n  }, false);\n}\nmodule.exports = change;\n\n\n//# sourceURL=webpack:///./src/js/change.js?");
+eval("function change() {\n  document.getElementsByTagName('button')[0].addEventListener('click', () => {\n    document.getElementById('app').style.backgroundColor = 'grey';\n  }, false);\n  // 下一行eslint所有规则都失效（下一行不进行eslint检查）\n  // eslint-disable-next-line\n  console.log('调用change函数成功');\n}\nmodule.exports = change;\n\n//# sourceURL=webpack:///./src/js/change.js?");
 
 /***/ }),
 
@@ -140,7 +140,7 @@ eval("function change() {\n  document.getElementsByTagName('button')[0].addEvent
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const change = __webpack_require__(/*! ./change.js */ \"./src/js/change.js\");\n__webpack_require__(/*! ../css/main1.css */ \"./src/css/main1.css\");\n__webpack_require__(/*! ../css/main2.less */ \"./src/css/main2.less\");\n__webpack_require__(/*! ../../../publicSource/图标资源/font_pd3vbz2hvz/iconfont.css */ \"../publicSource/图标资源/font_pd3vbz2hvz/iconfont.css\");\nchange();\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("const change = __webpack_require__(/*! ./change.js */ \"./src/js/change.js\");\n__webpack_require__(/*! ../css/main1.css */ \"./src/css/main1.css\");\n__webpack_require__(/*! ../css/main2.less */ \"./src/css/main2.less\");\n__webpack_require__(/*! ../../../publicSource/图标资源/font_pd3vbz2hvz/iconfont.css */ \"../publicSource/图标资源/font_pd3vbz2hvz/iconfont.css\");\n\nchange();\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 
